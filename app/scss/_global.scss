@@ -1,0 +1,29 @@
+body {
+	font-family: "Rubik", sans-serif;
+	line-height: 1.2;
+	font-size: 16px;
+	color: #243f4d;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	width: 100%;
+}
+
+.page {
+	flex: 1 1 auto;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0px auto;
+	padding: 0 15px;
+}
+
+.big-container {
+	max-width: 1800px;
+	margin: 0px auto;
+	padding: 0 15px;
+}
