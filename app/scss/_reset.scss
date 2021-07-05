@@ -41,6 +41,13 @@ textarea,
 select {
 	font: inherit;
 }
+button {
+	padding: 0;
+	border: 0;
+}
+a {
+	text-decoration: none;
+}
 body {
 	min-height: 100vh;
 }

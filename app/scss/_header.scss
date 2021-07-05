@@ -1,0 +1,127 @@
+.header {
+	// .header__inner
+	&__inner {
+		min-height: 144px;
+		display: flex;
+		align-items: center;
+	}
+	// .header__logo
+	&__logo {
+	}
+	// .header__menu
+	&__menu {
+		flex: 1 1 auto;
+	}
+	// .header__user
+	&__user {
+		display: flex;
+		align-items: center;
+	}
+	// .header__search-form
+	&__search-form {
+		margin-right: 21px;
+	}
+	// .header__search-form-label
+	&__search-form-label {
+		position: relative;
+		span {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 20px;
+			height: 20px;
+			background: url("../img/icons/search_icon.svg") 0 0 no-repeat;
+		}
+	}
+	// .header__search-form-input
+	&__search-form-input {
+		width: 52px;
+		height: 52px;
+		opacity: 0.2;
+		border-radius: 50%;
+		background-color: #a3bbc8;
+		border: 0;
+		&:focus {
+			+ span {
+				display: none;
+			}
+		}
+	}
+	// .header__user-links
+	&__user-links {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 178px;
+		height: 51px;
+		background-color: #fcd7b6;
+		border-radius: 50px;
+		position: relative;
+		margin-right: 18px;
+	}
+	// .header__user-link
+	&__user-link {
+		position: relative;
+		padding: 9px 30px 0 28px;
+		span {
+			position: absolute;
+			top: 0;
+			right: 20px;
+			width: 16px;
+			height: 16px;
+			background-color: #ffffff;
+			border-radius: 50%;
+			font-family: "DM Sans", sans-serif;
+			font-size: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		&:first-child {
+			border-right: 1px solid #fde7d3;
+		}
+	}
+	// .header__user-actions
+	&__user-actions {
+		width: 52px;
+		height: 52px;
+		border-radius: 50%;
+		background-color: #a3bbc8;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	// .menu__icon
+	&__icon {
+	}
+	// .menu__body
+	&__body {
+	}
+	// .menu__list
+	&__list {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 77px;
+	}
+	// .menu__item
+	&__item {
+		margin: 0 17px;
+	}
+	// .menu__link
+	&__link {
+		font-size: 15px;
+		font-weight: 500;
+		color: #436372;
+		text-decoration: none;
+	}
+}
+.icon-menu {
+}

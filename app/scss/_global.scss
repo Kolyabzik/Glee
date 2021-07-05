@@ -3,6 +3,7 @@ body {
 	line-height: 1.2;
 	font-size: 16px;
 	color: #243f4d;
+	font-weight: 400;
 }
 
 .wrapper {
@@ -14,6 +15,13 @@ body {
 
 .page {
 	flex: 1 1 auto;
+	&__title {
+		font-size: 36px;
+		font-weight: 300;
+		color: #222933;
+		text-align: center;
+		margin-bottom: 5px;
+	}
 }
 
 .container {
@@ -26,4 +34,95 @@ body {
 	max-width: 1800px;
 	margin: 0px auto;
 	padding: 0 15px;
+}
+
+%visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.section-title {
+	font-family: "DM Sans";
+	font-size: 36px;
+	line-height: 1.2;
+	font-weight: 700;
+	color: #1a1a1a;
+}
+
+.filter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__btn {
+		margin: 0 15px;
+		font-family: "DM Sans";
+		font-weight: 700;
+		color: #8b8b8b;
+		background-color: transparent;
+		cursor: pointer;
+		&._active {
+			color: #1a1a1a;
+		}
+	}
+}
+
+.breadcrumbs {
+	min-height: 125px;
+	background-color: #edf1f4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	// .breadcrumbs__list
+	&__list {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	// .breadcrumbs__item
+	&__item {
+		position: relative;
+		&:not(:last-child) {
+			padding-right: 14px;
+			margin-right: 6px;
+			&::after {
+				content: "/";
+				position: absolute;
+				right: 0;
+				color: #858b92;
+			}
+		}
+	}
+	&__link {
+		opacity: 0.6;
+		font-size: 14px;
+		color: #222933;
+	}
+}
+
+.btn {
+	font-family: "Rubik";
+	font-size: 18px;
+	font-weight: 500;
+	color: #fffefe;
+	min-height: 60px;
+	background-color: #a3bbc8;
+
+	display: inline-flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+
+	cursor: pointer;
+
+	&_white {
+		background-color: transparent;
+		border: 2px solid #a3bbc8;
+		color: #243f4d;
+	}
 }

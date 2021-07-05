@@ -1,0 +1,87 @@
+.login-form {
+	padding: 120px 0;
+	max-width: 470px;
+	margin: 0px auto;
+	// .login-form__label
+	&__label {
+		display: block;
+		margin-bottom: 25px;
+	}
+	// .login-form__text
+	&__text {
+		display: block;
+		font-size: 14px;
+		color: #436372;
+		margin-bottom: 15px;
+	}
+	// .login-form__input
+	&__input {
+		line-height: 60px;
+		padding: 0 20px;
+		width: 100%;
+	}
+	// .login-form__btn
+	&__btn {
+		margin-bottom: 35px;
+	}
+	// .login-form__line
+	&__line {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-bottom: 30px;
+		border-bottom: 2px solid #f6f6f6;
+		margin-bottom: 30px;
+	}
+	// .login-form__checkbox
+	&__checkbox {
+	}
+	// .login-form__checkbox-input
+	&__checkbox-input {
+		@extend %visually-hidden;
+		&:checked {
+			+ .login-form__checkbox-text {
+				&::before {
+					background-image: url("../img/icons/check_icon.png");
+					background-position: center center;
+					background-repeat: no-repeat;
+				}
+			}
+		}
+		&:focus {
+			+ .login-form__checkbox-text {
+				&::before {
+					outline: 1px solid #333;
+				}
+			}
+		}
+	}
+	// .login-form__checkbox-text
+	&__checkbox-text {
+		padding-left: 27px;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 2px;
+			left: 0;
+			width: 14px;
+			height: 14px;
+			background-color: #ebebeb;
+		}
+	}
+	// .login-form__link
+	&__link {
+		font-size: 14px;
+		color: #436372;
+	}
+	// .login-form__qustion
+	&__qustion {
+		text-align: center;
+		color: #436372;
+		margin-bottom: 20px;
+	}
+	// .login-form__register
+	&__register-btn {
+	}
+}

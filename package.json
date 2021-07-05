@@ -6,6 +6,7 @@
 	"author": "millnik",
 	"license": "ISC",
 	"devDependencies": {
+		"@fancyapps/ui": "^4.0.0-alpha.4",
 		"browser-sync": "^2.26.14",
 		"del": "^6.0.0",
 		"gulp": "^4.0.2",
@@ -15,6 +16,8 @@
 		"gulp-sass": "^5.0.0",
 		"gulp-uglify": "^3.0.2",
 		"jquery": "^3.6.0",
-		"sass": "^1.35.1"
+		"mixitup": "^3.3.1",
+		"sass": "^1.35.1",
+		"slick-carousel": "^1.8.1"
 	}
 }
